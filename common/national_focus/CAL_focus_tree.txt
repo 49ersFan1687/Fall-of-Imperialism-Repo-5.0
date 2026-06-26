@@ -9224,7 +9224,7 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = CAL_reactiatate_santa_ana_air_base
+    id = CAL_reactivate_santa_ana_air_base
     icon = GFX
     cost = 3
     available_if_capitulated = no
@@ -9270,14 +9270,14 @@ shared_focus = {
         factor = 1
     }
     prerequisite = {
-        focus = CAL_reactiatate_santa_ana_air_base
+        focus = CAL_reactivate_santa_ana_air_base
     }
     prerequisite = {
         focus = CAL_reactivate_mccellan_field
     }
     x = 1
     y = 1
-    relative_position_id = CAL_reactiatate_santa_ana_air_base
+    relative_position_id = CAL_reactivate_santa_ana_air_base
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_the_pacific_states_air_force"
         swap_ideas = {
