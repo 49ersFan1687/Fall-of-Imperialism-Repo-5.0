@@ -433,10 +433,6 @@ spriteTypes = {
 		name = "GFX_CAL_John_Lesesne_DeWitt"
 		textureFile = "gfx/leaders/CAL/Portrait_CAL_John_Lesesne_DeWitt.dds" 
 	}
-	spriteType = {
-		name = "GFX_CAL_Daring_Do"
-		textureFile = "gfx/leaders/CAL/Portrait_CAL_Daring_Do.dds" 
-	}
 
 	# Cascadia - AKB48 Members #
 	spriteType = {
