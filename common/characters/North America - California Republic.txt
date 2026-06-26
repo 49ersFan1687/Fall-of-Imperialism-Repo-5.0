@@ -1,7 +1,5 @@
 characters = {
-    #######################
     ### Country Leaders ###
-    #######################
     CAL_henry_agard_wallace = {
         name = CAL_henry_agard_wallace
 		portraits = {
@@ -19,7 +17,7 @@ characters = {
 		}
     }
 
-	CAL_provisional_council = { ### Starting Council ###
+	CAL_provisional_council = { ### Starting Leader ###
 		name = CAL_provisional_council
 		portraits = {
 			civilian = {
@@ -36,9 +34,7 @@ characters = {
 		}
 	}
 
-	##############################################
 	### Country Advisors - Heads of Government ###
-	##############################################
     CAL_huey_pierce_long_jr = {
         name = CAL_huey_pierce_long_jr
         portraits = {
@@ -193,9 +189,7 @@ characters = {
 		}
 	}
 
-	############################################
 	### Country Advisors - Foreign Ministers ###
-	############################################
 	CAL_dean_gooderham_acherson = {
 		name = CAL_dean_gooderham_acherson
 		portraits = {
@@ -217,10 +211,7 @@ characters = {
 		}
 	}
 
-	############################################
     ### California Republic - Field Marshals ###
-	############################################
-
 	CAL_dwight_david_eisenhower = {
 		name = CAL_dwight_david_eisenhower
 		portraits = {
@@ -356,9 +347,7 @@ characters = {
 		}
     }
 
-	#############################
-	### Generals - Level Five ###
-	#############################
+	### Generals ###
 	CAL_george_smith_patton_jr = {
 		name = CAL_george_smith_patton_jr
 		portraits = {
@@ -433,9 +422,6 @@ characters = {
 		}
     }
 
-	#############################
-	### Generals - Level Four ###
-	#############################
 	CAL_william_childs_westmoreland = {
 		name = CAL_william_childs_westmoreland 
 		portraits = {
@@ -782,9 +768,6 @@ characters = {
         }
 	}
 
-	##############################
-	### Generals - Level Three ###
-	##############################
 	CAL_john_daniel_lavelle = {
 		name = CAL_john_daniel_lavelle
 		portraits = {
@@ -1003,9 +986,6 @@ characters = {
         }
     }
 
-	############################
-	### Generals - Level Two ###
-	############################
 	CAL_charity_edna_adams_earley = {
 		name = CAL_charity_edna_adams_earley
 		portraits = {
@@ -1097,32 +1077,6 @@ characters = {
 		}
 	}
 	
-	CAL_daring_do = {
-		name = CAL_daring_do
-		portraits = {
-			army = {
-				large = "gfx/leaders/CAL/Portrait_CAL_Daring_Do.dds"
-			}
-		}
-		corps_commander = {
-			#desc = dont' leave equal symbol empty
-			traits = {
-				recon_expert
-				trait_reckless
-				commando
-			}
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
-		gender = female
-	}
-	
-	############################
-	### Generals - Level One ###
-	############################
 	CAL_john_fujio_aiso = {
 		name = CAL_john_fujio_aiso
 		portraits = {
@@ -1144,9 +1098,7 @@ characters = {
 		}
 	}
 
-	#############################
-	### Admirals - Level Five ###
-	#############################
+	### Admirals ###
 	CAL_ernest_joseph_king = {
 		name = CAL_ernest_joseph_king
 		portraits = {
@@ -1168,9 +1120,6 @@ characters = {
 
 	}
 
-	#############################
-	### Admirals - Level Four ###
-	#############################
 	CAL_william_daniel_Leahy = {
 		name = CAL_william_daniel_Leahy
 		portraits = {
@@ -1201,9 +1150,6 @@ characters = {
 		}
 	}
 
-	##############################
-	### Admirals - Level Three ###
-	##############################
 	CAL_samuel_Lee_gravely_jr = {
 		name = CAL_samuel_Lee_gravely_jr
 		portraits = {
@@ -1233,17 +1179,6 @@ characters = {
 			}
 		}
 	}
-
-	############################
-	### Admirals - Level Two ###
-	############################
-
-
-	############################
-	### Admirals - Level One ###
-	############################
-
-
 
 	##################
 	### Scientists ###
