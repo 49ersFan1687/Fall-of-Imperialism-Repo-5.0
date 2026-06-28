@@ -716,21 +716,6 @@ shared_focus = {
                 coordination_skill = 2
             }
         }
-        CAL_issac_campbell_kidd_sr = {
-            add_naval_commander_role = {
-                #desc = dont' leave equal symbol empty
-                traits = {
-                    blockade_runner
-                    bold
-                    fleet_protector
-                }
-                skill = 3
-                attack_skill = 3
-                defense_skill = 2
-                maneuvering_skill = 3
-                coordination_skill = 3
-            }
-        }
         CAL_felix_budwell_stump = {
             add_naval_commander_role = {
                 #desc = dont' leave equal symbol empty

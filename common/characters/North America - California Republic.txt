@@ -1160,16 +1160,6 @@ characters = {
 		}
 	}
 
-	CAL_issac_campbell_kidd_sr = {
-		name = CAL_issac_campbell_kidd_sr
-		portraits = {
-			army = {
-				large = "gfx/leaders/CAL/Portrait_CAL_Issac_Campbell_Kidd_Sr.dds"
-				small = "gfx/leaders/CAL/small/Portrait_CAL_Issac_Campbell_Kidd_Sr_small.dds"
-			}
-		}
-	}
-
 	CAL_felix_budwell_stump = {
 		name = CAL_felix_budwell_stump
 		portraits = {

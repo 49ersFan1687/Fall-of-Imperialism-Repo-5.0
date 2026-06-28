@@ -220,7 +220,6 @@ recruit_character = CAL_chester_william_nimitz
 recruit_character = CAL_samuel_lee_gravely_Jr
 recruit_character = CAL_william_fredrick_halsey_jr
 recruit_character = CAL_william_daniel_leahy
-recruit_character = CAL_issac_campbell_kidd_sr
 recruit_character = CAL_arleigh_albert_burke
 recruit_character = CAL_felix_budwell_stump
 
