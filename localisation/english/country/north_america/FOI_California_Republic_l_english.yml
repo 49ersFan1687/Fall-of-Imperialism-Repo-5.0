@@ -436,8 +436,8 @@ CAL_set_the_war_plans_in_motion_desc: ""
 ####################################################################
 ### National Focuses Lo CALisation - Pre-Regional Tree - Part One ###
 ####################################################################
- CAL_beginning_the_ CALifornia_reunfication_war: "Beginning the  CALifornia Reunification War"
- CAL_beginning_the_ CALifornia_reunfication_war_desc: ""
+ CAL_beginning_the_caLifornia_reunfication_war: "Beginning the California Reunification War"
+ CAL_beginning_the_caLifornia_reunfication_war_desc: ""
 
  CAL_construct_southeastern_defensive_lines: "Construct Southeastern Defensive Lines"
  CAL_construct_southeastern_defensive_lines_desc: ""
@@ -515,7 +515,7 @@ CAL_set_the_war_plans_in_motion_desc: ""
  CAL_a_silent_reflection_desc: ""
 
 ####################################################################
-### National Focuses Lo CALisation - Pre-Regional Tree - Part Two ###
+### National Focuses Localisation - Pre-Regional Tree - Part Two ###
 ####################################################################
  CAL_resolving_the_water_problem: "Resolving the Water Problem"
  CAL_resolving_the_water_problem_desc: ""
