@@ -9385,8 +9385,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_apply_chennaults_experience"
         swap_ideas = {
-            old_idea = CAL_chennault_reform_plan1
-            new_idea = CAL_chennault_reform_plan2
+            remove_idea = CAL_chennault_reform_plan1
+            add_idea = CAL_chennault_reform_plan2
         }
     }
 }
@@ -9427,8 +9427,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_return_to_the_p38_idea"
         swap_ideas = {
-            old_idea = CAL_arnold_reform_plan1
-            new_idea = CAL_arnold_reform_plan2
+            remove_idea = CAL_arnold_reform_plan1
+            add_idea = CAL_arnold_reform_plan2
         }
     }
 }
@@ -9469,8 +9469,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_the_theory_of_protracted_aerial_warfare"
         swap_ideas = {
-            old_idea = CAL_lemay_reform_plan1
-            new_idea = CAL_lemay_reform_plan2
+            remove_idea = CAL_lemay_reform_plan1
+            add_idea = CAL_lemay_reform_plan2
         }
     }
 }
@@ -9511,8 +9511,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_form_usaaf_training_academies"
         swap_ideas = {
-            old_idea = CAL_chennault_reform_plan2
-            new_idea = CAL_chennault_reform_plan3
+            remove_idea = CAL_chennault_reform_plan2
+            add_idea = CAL_chennault_reform_plan3
         }
     }
 }
@@ -9553,8 +9553,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_retired_bombers_modern_skies"
         swap_ideas = {
-            old_idea = CAL_arnold_reform_plan2
-            new_idea = CAL_arnold_reform_plan3
+            remove_idea = CAL_arnold_reform_plan2
+            add_idea = CAL_arnold_reform_plan3
         }
     }
 }
@@ -9595,8 +9595,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_institute_day_and_night_training_programs"
         swap_ideas = {
-            old_idea = CAL_lemay_reform_plan2
-            new_idea = CAL_lemay_reform_plan3
+            remove_idea = CAL_lemay_reform_plan2
+            add_idea = CAL_lemay_reform_plan3
         }
     }
 }
@@ -9621,8 +9621,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_standardize_issuing_of_two_way_radios"
         swap_ideas = {
-            old_idea = CAL_chennault_reform_plan3
-            new_idea = CAL_chennault_reform_plan4
+            remove_idea = CAL_chennault_reform_plan3
+            add_idea = CAL_chennault_reform_plan4
         }
     }
 }
@@ -9647,8 +9647,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_begin_new_aircaft_prototype_trials"
         swap_ideas = {
-            old_idea = CAL_arnold_reform_plan3
-            new_idea = CAL_arnold_reform_plan4
+            remove_idea = CAL_arnold_reform_plan3
+            add_idea = CAL_arnold_reform_plan4
         }
     }
 }
@@ -9673,8 +9673,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_begin_the_b_52_project"
         swap_ideas = {
-            old_idea = CAL_lemay_reform_plan3
-            new_idea = CAL_lemay_reform_plan4
+            remove_idea = CAL_lemay_reform_plan3
+            add_idea = CAL_lemay_reform_plan4
         }
     }
 }
@@ -9696,8 +9696,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_the_armys_ace_in_the_hole"
         swap_ideas = {
-            old_idea = CAL_chennault_reform_plan4
-            new_idea = CAL_chennault_reform_plan5
+            remove_idea = CAL_chennault_reform_plan4
+            add_idea = CAL_chennault_reform_plan5
         }
     }
 }
@@ -9719,8 +9719,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_the_neutral_modernizer"
         swap_ideas = {
-            old_idea = CAL_arnold_reform_plan4
-            new_idea = CAL_arnold_reform_plan5
+            remove_idea = CAL_arnold_reform_plan4
+            add_idea = CAL_arnold_reform_plan5
         }
     }
 }
@@ -9742,8 +9742,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_a_power_hungry_air_force"
         swap_ideas = {
-            old_idea = CAL_lemay_reform_plan4
-            new_idea = CAL_lemay_reform_plan5
+            remove_idea = CAL_lemay_reform_plan4
+            add_idea = CAL_lemay_reform_plan5
         }
     }
 }
@@ -11307,10 +11307,6 @@ shared_focus = {
     relative_position_id = CAL_the_pacific_states_navy_reform_plan
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_admiral_nimitzs_plan_carrier_onslaught"
-        swap_ideas = {
-            remove_idea = CAL_the_mothballed_navy3
-            add_idea = CAL_nimitz_reform_plan1
-        }
     }
 }
 
@@ -11395,10 +11391,6 @@ shared_focus = {
     relative_position_id = CAL_admiral_halseys_plan_a_new_great_white_fleet
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_modernize_the_ship_of_the_line_concept"
-        swap_ideas = {
-            remove_idea = CAL_halsey_reform_plan1
-            add_idea = CAL_halsey_reform_plan2
-        }
     }
 }
 
@@ -12247,8 +12239,8 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_steel_krakens"
         swap_ideas = {
-            add_idea = CAL_king_reform_plan4
-            remove_idea = CAL_king_reform_plan5
+            remove_idea = CAL_king_reform_plan4
+            add_idea = CAL_king_reform_plan5
         }
     }
 }
