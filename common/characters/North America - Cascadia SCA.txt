@@ -1,9 +1,7 @@
 characters = {
 ############################################## AKB48 Members (Second Continental Army - Old Guard Aligned Generals) ##############################################
 
-	###################################################################
     ### Second Continental Army Main Adminstration - Field Marshals ###
-	###################################################################
     CSD_atsuko_maeda = {
         name = CSD_atsuko_maeda
 		portraits = {
@@ -422,9 +420,6 @@ characters = {
 		gender = female
 	}
 	
-	#######################################################################
-	### Second Continental Army Main Adminstration Generals - Level Two ###
-	#######################################################################
 	CSD_miho_miyazaki = {
 		name = CSD_miho_miyazaki
 		portraits = {
@@ -476,21 +471,7 @@ characters = {
 		gender = female
 	}
 
-    #######################################################################
-	### Second Continental Army Main Adminstration Generals - Level One ###
-	#######################################################################
-
-
-
-	########################################################################
-	### Second Continental Army Main Adminstration Admirals - Level Five ###
-	########################################################################
-
-
-
-	########################################################################
-	### Second Continental Army Main Adminstration Admirals - Level Four ###
-	########################################################################
+	### Second Continental Army Main Adminstration Admirals ###
 	CSD_mayu_watanabe = {
 		name = CSD_mayu_watanabe
 		portraits = {
@@ -524,9 +505,6 @@ characters = {
 		gender = female
 	}
 
-	#########################################################################
-	### Second Continental Army Main Adminstration Admirals - Level Three ###
-	#########################################################################
 	CSD_tomomi_itano = {
 		name = CSD_tomomi_itano
 		portraits = {
@@ -601,9 +579,7 @@ characters = {
 
 ############################################## Power Rangers Characters (Second Continental Army - Old Guard Aligned Generals) ##############################################
 
-	################################################################
     ### Second Continental Army/US Army Rangers - Field Marshals ###
-	################################################################
 	CSD_tommy_oliver = {
 		name = CSD_tommy_oliver
 		portraits = {
@@ -716,9 +692,7 @@ characters = {
 		}
 	}
 
-	#####################################################################
-	### Second Continental Army/US Army Rangers Generals - Level Five ###
-	#####################################################################
+	### Second Continental Army/US Army Rangers Generals ###
 	CSD_adam_park = {
 		name = CSD_adam_park
 		portraits = {
@@ -745,9 +719,6 @@ characters = {
 		}
 	}
 	
-    #####################################################################
-	### Second Continental Army/US Army Rangers Generals - Level Four ###
-	#####################################################################
 	CSD_trini_kwan = {
 		name = CSD_trini_kwan
 		portraits = {
@@ -855,9 +826,6 @@ characters = {
 		}
 	}
 
-	######################################################################
-	### Second Continental Army/US Army Rangers Generals - Level Three ###
-	######################################################################
 	CSD_tanya_sloan = {
 		name = CSD_tanya_sloan
 		portraits = {
@@ -963,9 +931,6 @@ characters = {
 		gender = female
 	}
 
-    ####################################################################
-	### Second Continental Army/US Army Rangers Generals - Level Two ###
-	####################################################################
 	CSD_cassie_chan = {
 		name = CSD_cassie_chan
 		portraits = {
@@ -1016,10 +981,6 @@ characters = {
 			logistics_skill = 2
 		}
 	}
-
-	####################################################################
-	### Second Continental Army/US Army Rangers Generals - Level One ###
-	####################################################################
 	
 ############################################## My Little Pony Characters (Second Continental Army - Progressive-Aligned Generals) ##############################################
 
