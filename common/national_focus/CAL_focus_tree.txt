@@ -3699,7 +3699,7 @@ shared_focus = {
         factor = 1
     }
     mutually_exclusive = {
-        focus = CAL_return_democracy_back_to_the_people
+        focus = CAL_return_of_civilian_democracy
     }
     prerequisite = {
         focus = CAL_handling_the_political_system
@@ -7613,10 +7613,6 @@ shared_focus = {
     relative_position_id = CAL_longs_machine
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_the_theory_of_protracted_aerial_warfare"
-        swap_ideas = {
-            old_idea = CAL_lemay_reform_plan1
-            new_idea = CAL_lemay_reform_plan2
-        }
     }
 }
 
@@ -9870,9 +9866,6 @@ shared_focus = {
     ai_will_do = {
         factor = 1
     }
-    prerequisite = {
-        focus = CAL_addressing_each_military_branch
-    }
     x = 45
     y = 1
     completion_reward = {
@@ -10032,9 +10025,9 @@ shared_focus = {
 		focus = CAL_choosing_our_reform_plan
 	}
 	mutually_exclusive = {
-		focus = CAL_patton_army_of_the_future
-		focus = CAL_marshall_modern_minuteman
-		focus = CAL_eisenhower_return_to_form
+		focus = CAL_pattons_doctrine_army_of_the_future
+		focus = CAL_marshalls_doctrine_modern_minuteman
+		focus = CAL_eisenhowers_doctrine_return_to_form
 	}
 	x = -2
 	y = 1
@@ -15305,7 +15298,7 @@ shared_focus = {
         factor = 1
     }
     mutually_exclusive = {
-        focus = CAL_nationalized_buisnesses
+        focus = CAL_private_property
     }
     prerequisite = {
         focus = CAL_implementing_monetary_reform

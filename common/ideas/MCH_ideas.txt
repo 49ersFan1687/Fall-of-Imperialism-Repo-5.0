@@ -1,27 +1,27 @@
 ideas = {
     ### Country Ideas - Michigan ###
     country = {
-     MCH_Canadian_Garrison = { 
-             allowed = { always = no }
-             picture = GFX_fish
-             modifier = {
-		stability_factor = 0.05
-		consumer_goods_factor = -0.05
-		resistance_activity = -0.15
-            }
+    MCH_Canadian_Garrison = { 
+        allowed = { always = no }
+        picture = GFX_fish
+        modifier = {
+			stability_factor = 0.05
+			consumer_goods_factor = -0.05
+			resistance_activity = -0.15
+        }
 	}
       
-     MCH_Militia_Strength_1 = { 
-             allowed = { always = no }
-             picture = GFX_fish
-             modifier = {
-		communism_drift = 0.01
-		national_socialism_drift = 0.01
-		stability_factor = -0.05
-		war_support_factor = -0.04
-		monthly_population = -0.03
-                production_speed_buildings_factor = -0.03
-            }
+    MCH_Militia_Strength_1 = { 
+        allowed = { always = no }
+        picture = GFX_fish
+        modifier = {
+			communism_drift = 0.01
+			national_socialism_drift = 0.01
+			stability_factor = -0.05
+			war_support_factor = -0.04
+			monthly_population = -0.03
+             production_speed_buildings_factor = -0.03
+        }
 	}
      MCH_Militia_Strength_2 = { 
              allowed = { always = no }
@@ -205,6 +205,7 @@ ideas = {
 		
             }
 	}
+
    	MCH_Protectionist_Policy = { 
              allowed = { always = no }
              picture = GFX_fish
@@ -216,26 +217,26 @@ ideas = {
 		
             }
 	}
+
   	MCH_Socialist_Michigan = { 
-             allowed = { always = no }
-             picture = GFX_fish
-             modifier = {
-		consumer_goods_factor = 0.05
-		stability_factor = 0.15
-		socialism_drift = 0.03
-		
-            }
+        allowed = { always = no }
+        picture = GFX_fish
+        modifier = {
+			consumer_goods_factor = 0.05
+			stability_factor = 0.15
+			socialism_drift = 0.03
+        }
 	}
+
   	MCH_Liberal_Michigan = { 
-             allowed = { always = no }
-             picture = GFX_fish
-             modifier = {
-		consumer_goods_factor = -0.05
-		war_support = 0.05
-		stability = 0.05
-		democratic_drift = 0.03
-		
-            }
+        allowed = { always = no }
+        picture = GFX_fish
+        modifier = {
+			consumer_goods_factor = -0.05
+			war_support_factor = 0.05
+			stability_factor= 0.05
+			democratic_drift = 0.03
+        }
 	}
   	MCH_Canadian_Michigan = { 
              allowed = { always = no }
@@ -258,7 +259,7 @@ ideas = {
              allowed = { always = no }
              picture = GFX_fish
              modifier = {
-		stability = -0.07
+		stability_factor = -0.07
 		consumer_goods_factor = -0.09
             }
 	}
