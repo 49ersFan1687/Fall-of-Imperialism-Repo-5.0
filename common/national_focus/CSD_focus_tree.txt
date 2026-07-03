@@ -1,0 +1,699 @@
+focus_tree = {
+    id = CSD_starting_focus_tree
+    country = {
+		factor = 0
+		modifier = { 
+            add = 10 
+            tag = CAL
+        }
+	}
+    default = no
+	shared_focus = CSD_assesing_our_situation
+    continuous_focus_position = { x = 9999 y = 9999 }
+}
+
+### Initial Focus Tree - Warlord State ###
+shared_focus = {
+    id = CSD_assesing_our_situation
+    #icon = 
+    cost = 3
+    available_if_capitulated = no
+	ai_will_do = {
+		factor = 100
+	}
+    x = 10
+	y = 0
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus CSD_assesing_our_situation"
+    }
+}
+
+shared_focus = {
+    id = CSD_a_crisis_at_our_hands
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_assesing_our_situation
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_assesing_our_situation
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_a_crisis_at_our_hands"
+	}
+}
+
+shared_focus = {
+    id = CSD_not_just_a_warlord_state
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_assesing_our_situation
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_assesing_our_situation
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_a_crisis_at_our_hands"
+	}
+}
+
+shared_focus = {
+    id = CSD_our_governments_little_situation
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_a_crisis_at_our_hands
+    }
+    prerequisite = {
+        focus = CSD_not_just_a_warlord_state
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_a_crisis_at_our_hands
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_our_governments_little_situation"
+	}
+}
+
+shared_focus = {
+    id = CSD_getting_started
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_our_governments_little_situation
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_our_governments_little_situation
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_getting_started"
+	}
+}
+
+shared_focus = {
+    id = CSD_preparations_for_state_elections
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_getting_started
+    }
+    x = -4
+    y = 1
+    relative_position_id = CSD_getting_started
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_preparations_for_state_elections"
+	}
+}
+
+shared_focus = {
+    id = CSD_fixing_the_destroyed_cascadian_economy
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_getting_started
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_getting_started
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_fixing_the_destroyed_cascadian_economy"
+	}
+}
+
+shared_focus = {
+    id = CSD_addressing_the_cascadian_second_continental_army
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_getting_started
+    }
+    x = 4
+    y = 1
+    relative_position_id = CSD_getting_started
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_addressing_the_cascadian_second_continental_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_promise_them_free_will
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_preparations_for_state_elections
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_preparations_for_state_elections
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_promise_them_free_will"
+	}
+}
+
+shared_focus = {
+    id = CSD_what_has_been_done
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_fixing_the_destroyed_cascadian_economy
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_fixing_the_destroyed_cascadian_economy
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_from_militias_to_a_proper_army
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_addressing_the_cascadian_second_continental_army
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_addressing_the_cascadian_second_continental_army
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_from_militias_to_a_proper_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_from_soldiers_to_politicians
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_promise_them_free_will
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_promise_them_free_will
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_from_soldiers_to_politicians"
+	}
+}
+
+shared_focus = {
+    id = CSD_promises_for_the_public
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+   prerequisite = {
+        focus = CSD_promise_them_free_will
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_promise_them_free_will
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_promises_for_the_public"
+	}
+}
+
+shared_focus = {
+    id = CSD_what_must_be_done
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_what_has_been_done
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_what_has_been_done
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_must_be_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_inevitable_war
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_from_militias_to_a_proper_army
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_from_militias_to_a_proper_army
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_inevitable_war"
+	}
+}
+
+shared_focus = {
+    id = CSD_laying_the_foundations_for_the_cascadian_air_force
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_from_militias_to_a_proper_army
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_from_militias_to_a_proper_army
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_inevitable_war"
+	}
+}
+
+shared_focus = {
+    id = CSD_our_candidates
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_from_soldiers_to_politicians
+    }
+    prerequisite = {
+        focus = CSD_promises_for_the_public
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_from_soldiers_to_politicians
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_our_candidates"
+	}
+}
+
+shared_focus = {
+    id = CSD_infastructure_revitalization
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_what_must_be_done
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_what_must_be_done
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_inevitable_war"
+	}
+}
+
+shared_focus = {
+    id = CSD_rebuilding_the_arms_factories
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_what_must_be_done
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_what_must_be_done
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_inevitable_war"
+	}
+}
+
+shared_focus = {
+    id = CSD_firepower_and_speed
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_inevitable_war
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_the_inevitable_war
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_beasts_from_the_sky
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_laying_the_foundations_for_the_cascadian_air_force
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_laying_the_foundations_for_the_cascadian_air_force
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_start_the_political_rallies
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_our_candidates
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_our_candidates
+    completion_reward = {
+
+    }
+}
+
+shared_focus = {
+    id = CSD_restart_trade
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+     prerequisite = {
+        focus = CSD_infastructure_revitalization
+    }
+    prerequisite = {
+        focus = CSD_rebuilding_the_arms_factories
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_infastructure_revitalization
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = CSD_a_long_way_to_go
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_firepower_and_speed
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_firepower_and_speed
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_a_long_way_to_go"
+	}
+}
+
+shared_focus = {
+    id = CSD_forming_a_bomber_fleet
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_beasts_from_the_sky
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_beasts_from_the_sky
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_and_hope_for_the_best
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_start_the_political_rallies
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_start_the_political_rallies
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_a_growing_economy
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_restart_trade
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_restart_trade
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_a_northwestern_military_industrial_complex
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_rebuilding_the_arms_factories
+    }
+    prerequisite = {
+        focus = CSD_a_long_way_to_go
+    }
+    x = 1
+    y = 2
+    relative_position_id = CSD_rebuilding_the_arms_factories
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_cascadian_green_bunch
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_a_long_way_to_go
+    }
+    prerequisite = {
+        focus = CSD_forming_a_bomber_fleet
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_a_long_way_to_go
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_political_future_of_cascadia
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_and_hope_for_the_best
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_and_hope_for_the_best
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_cascadian_industrialization
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_a_growing_economy
+    }
+    prerequisite = {
+        focus = CSD_a_northwestern_military_industrial_complex
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_a_growing_economy
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_rise_of_the_green_army
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_cascadian_green_bunch
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_the_cascadian_green_bunch
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_cascadia_ready_to_go
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_political_future_of_cascadia
+    }
+    prerequisite = {
+        focus = CSD_the_cascadian_industrialization
+    }
+    prerequisite = {
+        focus = CSD_the_rise_of_the_green_army
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_the_cascadian_industrialization
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_election_season
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_cascadia_ready_to_go
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_cascadia_ready_to_go
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_election_season"
+	}
+}
+
+shared_focus = {
+    id = CSD_announcing_the_winner
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_election_season
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_election_season
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
