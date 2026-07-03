@@ -970,7 +970,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 100
 	}
-    x = 10
+    x = 5
 	y = 0
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CSD_assesing_our_situation"
@@ -1337,3 +1337,572 @@ shared_focus = {
 }
 
 ### Skyland Expeditionary Force Expansion Tree #2 ###
+shared_focus = {
+    id = CSD_consolidating_our_gains
+    #icon = 
+    cost = 3
+    available_if_capitulated = no
+	ai_will_do = {
+		factor = 100
+	}
+    x = 15
+	y = 0
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus CSD_assesing_our_situation"
+    }
+}
+
+shared_focus = {
+    id = CSD_just_like_robespierre
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    mutually_exclusive = {
+        focus = CSD_bring_in_the_cops
+    }
+    prerequisite = {
+        focus = CSD_consolidating_our_gains
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_consolidating_our_gains
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_a_crisis_at_our_hands"
+	}
+}
+
+shared_focus = {
+    id = CSD_bring_in_the_cops
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    mutually_exclusive = {
+        focus = CSD_just_like_robespierre
+    }
+    prerequisite = {
+        focus = CSD_consolidating_our_gains
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_consolidating_our_gains
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_a_crisis_at_our_hands"
+	}
+}
+
+shared_focus = {
+    id = CSD_heads_will_roll
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_just_like_robespierre
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_just_like_robespierre
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_law_and_order
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_bring_in_the_cops
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_bring_in_the_cops
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_cascadian_revolution
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_heads_will_roll
+        focus = CSD_law_and_order
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_heads_will_roll
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_stabilize_cascadia
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_heads_will_roll
+        focus = CSD_law_and_order
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_heads_will_roll
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_our_light_will_endure
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_heads_will_roll
+        focus = CSD_law_and_order
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_law_and_order
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_preparations_for_the_west_coast
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_cascadian_revolution
+    }
+    prerequisite = {
+        focus = CSD_stabilize_cascadia
+    }
+    prerequisite = {
+        focus = CSD_our_light_will_endure
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_stabilize_cascadia
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_marching_on_california
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_preparations_for_the_west_coast
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_preparations_for_the_west_coast
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_pacify_the_continental_army
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_marching_on_california
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_marching_on_california
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_end_the_nationalists
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_marching_on_california
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_marching_on_california
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_cause_chaos_in_their_ranks
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_pacify_the_continental_army
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_pacify_the_continental_army
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_gather_all_the_info_we_can
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_end_the_nationalists
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_end_the_nationalists
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_secure_northern_california
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_cause_chaos_in_their_ranks
+    }
+    prerequisite = {
+        focus = CSD_gather_all_the_info_we_can
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_cause_chaos_in_their_ranks
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_a_crisis_at_our_hands"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_nevada_detour
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_secure_northern_california
+    }
+    x = -3
+    y = 1
+    relative_position_id = CSD_secure_northern_california
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_what_has_been_done"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_march_south
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_secure_northern_california
+    }
+    x = 3
+    y = 1
+    relative_position_id = CSD_secure_northern_california
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_end_the_military_administration
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_nevada_detour
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_the_nevada_detour
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_stabilize_the_els_and_the_free_republic
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_nevada_detour
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_the_nevada_detour
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_no_sunshine_and_rainbows
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_march_south
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_the_march_south
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_prep_our_attacks
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_end_the_military_administration
+    }
+    prerequisite = {
+        focus = CSD_stabilize_the_els_and_the_free_republic
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_end_the_military_administration
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_deal_with_enemy_spies
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_end_the_military_administration
+    }
+    prerequisite = {
+        focus = CSD_stabilize_the_els_and_the_free_republic
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_end_the_military_administration
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_supplies_for_the_nevada_desert
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_end_the_military_administration
+    }
+    prerequisite = {
+        focus = CSD_stabilize_the_els_and_the_free_republic
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_stabilize_the_els_and_the_free_republic
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_spread_propaganda
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_no_sunshine_and_rainbows
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_no_sunshine_and_rainbows
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_destabilize_them
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_no_sunshine_and_rainbows
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_no_sunshine_and_rainbows
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_secure_area_51
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_prep_our_attacks
+    }
+    prerequisite = {
+        focus = CSD_deal_with_enemy_spies
+    }
+    prerequisite = {
+        focus = CSD_supplies_for_the_nevada_desert
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_prep_our_attacks
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_two_birds_with_one_stone
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_prep_our_attacks
+    }
+    prerequisite = {
+        focus = CSD_deal_with_enemy_spies
+    }
+    prerequisite = {
+        focus = CSD_supplies_for_the_nevada_desert
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_deal_with_enemy_spies
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
+
+shared_focus = {
+    id = CSD_operation_navajo
+    #icon = 
+	cost = 3
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_spread_propaganda
+    }
+    prerequisite = {
+        focus = CSD_destabilize_them
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_spread_propaganda
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
+	}
+}
