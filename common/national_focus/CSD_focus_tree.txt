@@ -26,6 +26,20 @@ focus_tree = {
     continuous_focus_position = { x = 9999 y = 9999 }
 }
 
+focus_tree = {
+    id = CSD_preregional_expansion_tree
+    country = {
+		factor = 0
+		modifier = { 
+            add = 10 
+            tag = CAL
+        }
+	}
+    default = no
+	shared_focus = CSD_the_western_challenge
+    continuous_focus_position = { x = 9999 y = 9999 }
+}
+
 ### Initial Focus Tree - Warlord State ###
 shared_focus = {
     id = CSD_assesing_our_situation
@@ -710,4 +724,254 @@ shared_focus = {
     completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
 	}
+}
+
+### Skyland Expeditionary Force Coup ###
+shared_focus = {
+    id = CSD_skyand_expeditionary_force_coup
+    #icon = 
+    cost = 3
+    available_if_capitulated = no
+	ai_will_do = {
+		factor = 100
+	}
+    x = 10
+	y = 0
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus CSD_assesing_our_situation"
+    }
+}
+
+shared_focus = {
+    id = CSD_a_job_undone
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_skyand_expeditionary_force_coup
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_skyand_expeditionary_force_coup
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_oaths_of_loyalty
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_a_job_undone
+    }
+    x = -2
+    y = 1
+    relative_position_id = CSD_a_job_undone
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_getting_down_to_buisness
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_a_job_undone
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_a_job_undone
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_kickstarting_our_industrial_progress
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_a_job_undone
+    }
+    x = 2
+    y = 1
+    relative_position_id = CSD_a_job_undone
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_loyalty_to_the_harawateru_regime
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_oaths_of_loyalty
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_oaths_of_loyalty
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_soaring_to_infinity
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_getting_down_to_buisness
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_getting_down_to_buisness
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_magical_industrial_revolution
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_kickstarting_our_industrial_progress
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_kickstarting_our_industrial_progress
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_the_japanese_napoleon
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_soaring_to_infinity
+    }
+    prerequisite = {
+        focus = CSD_loyalty_to_the_harawateru_regime
+        focus = CSD_the_magical_industrial_revolution
+    }
+    x = -1
+    y = 1
+    relative_position_id = CSD_soaring_to_infinity
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+
+shared_focus = {
+    id = CSD_for_sora
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_soaring_to_infinity
+    }
+    prerequisite = {
+        focus = CSD_loyalty_to_the_harawateru_regime
+        focus = CSD_the_magical_industrial_revolution
+    }
+    x = 1
+    y = 1
+    relative_position_id = CSD_soaring_to_infinity
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_marshal_sky_looks_outward
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_the_japanese_napoleon
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_the_japanese_napoleon
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+shared_focus = {
+    id = CSD_our_place_in_the_american_carnage
+    #icon = 
+	cost = 10
+	available_if_capitulated = no
+	ai_will_do = {
+		factor = 1
+	}
+    prerequisite = {
+        focus = CSD_for_sora
+    }
+    x = 0
+    y = 1
+    relative_position_id = CSD_for_sora
+    completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSD_the_rise_of_the_green_army"
+	}
+}
+
+### Skyland Expeditionary Force Expansion Tree #1 ###
+shared_focus = {
+    id = CSD_the_western_challenge
+    #icon = 
+    cost = 3
+    available_if_capitulated = no
+	ai_will_do = {
+		factor = 100
+	}
+    x = 10
+	y = 0
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus CSD_assesing_our_situation"
+    }
 }
