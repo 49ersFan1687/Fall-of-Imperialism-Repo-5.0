@@ -12,6 +12,20 @@ focus_tree = {
     continuous_focus_position = { x = 9999 y = 9999 }
 }
 
+focus_tree = {
+    id = CSD_skyland_coup
+    country = {
+		factor = 0
+		modifier = { 
+            add = 10 
+            tag = CAL
+        }
+	}
+    default = no
+	shared_focus = CSD_skyand_expeditionary_force_coup
+    continuous_focus_position = { x = 9999 y = 9999 }
+}
+
 ### Initial Focus Tree - Warlord State ###
 shared_focus = {
     id = CSD_assesing_our_situation
