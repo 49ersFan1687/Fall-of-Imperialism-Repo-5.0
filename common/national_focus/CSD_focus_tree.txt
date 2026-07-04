@@ -41,6 +41,21 @@ focus_tree = {
     continuous_focus_position = { x = 9999 y = 9999 }
 }
 
+focus_tree = {
+    id = CSD_preregional_expansion_tree
+    country = {
+		factor = 0
+		modifier = { 
+            add = 10 
+            tag = CSD
+        }
+	}
+    default = no
+	shared_focus = CSD_the_cascadian_armed_forces_under_sora
+    shared_focus = CSD_the_funds_needed_for_war_and_peace
+    continuous_focus_position = { x = 9999 y = 9999 }
+}
+
 ### Initial Focus Tree - Warlord State ###
 shared_focus = {
     id = CSD_assesing_our_situation
@@ -1906,3 +1921,9 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus CSD_beasts_from_the_sky"
 	}
 }
+
+### Skyland Expeditionary Force Regional Military Tree ###
+
+
+
+### Skyland Expeditionary Force Regional Economy Tree ###
