@@ -446,7 +446,7 @@ shared_focus = {
         }
         ## todo: Event and Add Order of Battle for 6th Army
         #hidden_effect = {
-        #   load_oob = CAL_eighth_army
+        #   load_oob = CAL_sixth_army
         #}
     }
 }
@@ -1077,7 +1077,7 @@ shared_focus = {
 
 shared_focus = {
     id = CAL_solving_the_manpower_problem
-    icon = GFX
+    icon = GFX_focus_CAL_solving_the_manpower_problem
     cost = 2
     available_if_capitulated = no
 	ai_will_do = {
@@ -1340,7 +1340,7 @@ shared_focus = {
 
 shared_focus = {
     id = CAL_new_tank_research
-    icon = GFX
+    icon = GFX_focus_CAL_new_tank_research
     cost = 2
     available_if_capitulated = no
 	ai_will_do = {
@@ -3265,9 +3265,9 @@ shared_focus = {
     relative_position_id = CAL_expanding_the_california_military_into_something_more_than_a_local_force
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_going_across_the_rockies"
-        hidden_effect = {
-            load_oob = "CAL_tenth_mountain"
-        }
+        #hidden_effect = {
+        #    load_oob = "CAL_tenth_mountain"
+        #}
         add_tech_bonus = {
 			bonus = 0.5
 			uses = 1
@@ -4180,7 +4180,7 @@ shared_focus = {
                 has_completed_focus = CAL_for_people_of_the_state
             }
         }
-        else_if = {
+        else = {
             limit = {
                 has_completed_focus = CAL_reinstate_civil_liberties
                 has_completed_focus = CAL_expanding_constituences
@@ -4198,6 +4198,20 @@ shared_focus = {
     relative_position_id = CAL_handling_the_political_system
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_prepping_for_america"
+        if = {
+            limit = {
+                has_completed_focus = CAL_reopen_the_gi_bill
+                has_completed_focus = CAL_for_people_of_the_state
+            }
+            set_country_flag = CAL_democracy_under_the_military
+        }
+        else = {
+            limit = {
+                has_completed_focus = CAL_reinstate_civil_liberties
+                has_completed_focus = CAL_expanding_constituences
+            }
+            set_country_flag = CAL_retain_civilian_democracy
+        }
     }
 }
 
