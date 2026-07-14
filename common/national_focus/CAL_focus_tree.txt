@@ -4210,7 +4210,7 @@ shared_focus = {
                 has_completed_focus = CAL_reinstate_civil_liberties
                 has_completed_focus = CAL_expanding_constituences
             }
-            set_country_flag = CAL_retain_civilian_democracy
+            set_country_flag = CAL_retained_civilian_democracy
         }
     }
 }
@@ -4245,6 +4245,7 @@ shared_focus = {
         has_completed_focus = CAL_a_silent_reflection
         has_completed_focus = CAL_why_we_fight
         has_completed_focus = CAL_the_birth_of_the_psa_military
+        has_country_flag = CAL_retained_civilian_democracy
 	}
     icon = GFX
     cost = 3
@@ -4471,6 +4472,7 @@ shared_focus = {
         has_completed_focus = CAL_a_silent_reflection
         has_completed_focus = CAL_why_we_fight
         has_completed_focus = CAL_the_birth_of_the_psa_military
+        has_country_flag = CAL_democracy_under_the_military
 	}
     icon = GFX
     cost = 3
