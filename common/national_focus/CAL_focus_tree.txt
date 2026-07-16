@@ -12442,10 +12442,7 @@ shared_focus = {
     relative_position_id = CAL_steel_krakens
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus CAL_the_navys_underwater_killers"
-        swap_ideas = {
-            add_idea = CAL_king_reform_plan5
-            remove_idea = CAL_king_reform_plan6
-        }
+        
     }
 }
 
