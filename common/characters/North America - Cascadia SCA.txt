@@ -984,9 +984,7 @@ characters = {
 	
 ############################################## My Little Pony Characters (Second Continental Army - Progressive-Aligned Generals) ##############################################
 
-	#############################################################
 	### Second Continental Army Progressives (Field Marshals) ###
-	#############################################################
 	CSD_twilight_sparkle = {
 		name = CSD_twilight_sparkle
 		portraits = {
@@ -1032,42 +1030,14 @@ characters = {
 		gender = female
 	}
 
-
-	##################################################################
-	### Second Continental Army Progressives - Level Five Generals ###
-	##################################################################
-
-
-
-	##################################################################
-	### Second Continental Army Progressives - Level Four Generals ###
-	##################################################################
-
-
-
-	###################################################################
-	### Second Continental Army Progressives - Level Three Generals ###
-	###################################################################
-
+	### Second Continental Army Progressives Generals ###
 	
-
-	#################################################################
-	### Second Continental Army Progressives - Level Two Generals ###
-	#################################################################
-
-
-
-	#################################################################
-	### Second Continental Army Progressives - Level One Generals ###
-	#################################################################
 
 
 
 	############################################## RWBY Characters (Second Continental Army - Militarist-Aligned Generals) ##############################################
 
-	############################################################
-	### Second Continental Army Militarists (Field Marshals) ###
-	############################################################
+	### Second Continental Army Moderate Militarists (Field Marshals) ###
 	CSD_jaune_arc = {
 		name = CSD_jaune_arc
 		portraits = {
@@ -1191,9 +1161,7 @@ characters = {
 		}
 	}
 
-	#################################################################
-	### Second Continental Army Militarists - Level Five Generals ###
-	#################################################################
+	### Second Continental Army Moderate Militarists - Generals ###
 	CSD_blake_belladonna = {
 		name = CSD_blake_belladonna
 		portraits = {
@@ -1254,9 +1222,6 @@ characters = {
 		gender = female
 	}
 	
-	#################################################################
-	### Second Continental Army Militarists - Level Four Generals ###
-	#################################################################
 	CSD_pyrrha_nikos = {
 		name = CSD_pyrrha_nikos
 		portraits = {
@@ -1368,9 +1333,6 @@ characters = {
 		}
 	}
 
-	##################################################################
-	### Second Continental Army Militarists - Level Three Generals ###
-	##################################################################
 	CSD_coco_adel = {
 		name = CSD_coco_adel
 		portraits = {
@@ -1569,16 +1531,6 @@ characters = {
 		}
 		gender = female
 	}
-
-	################################################################
-	### Second Continental Army Militarists - Level Two Generals ###
-	################################################################
-
-
-
-	################################################################
-	### Second Continental Army Militarists - Level One Generals ###
-	################################################################
 
 
 
