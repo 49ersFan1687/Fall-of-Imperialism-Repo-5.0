@@ -18,8 +18,8 @@ state={
 			8241 1 # Invercargill
 		}
 
-		owner = TUR
-		add_core_of = RKK
+		owner = AST
+		add_core_of = AST
 	}
 
 	provinces = {
