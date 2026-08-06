@@ -14,8 +14,8 @@ state = {
 
 	history = {
 
-		owner = MAL
-		add_core_of = MAL
+		owner = JAP
+		add_core_of = JAP
 
 		victory_points = {
 			4412 1 # Kota Baru
