@@ -1,12 +1,15 @@
 state = {
-	id = 1191
-	name = "STATE_1191"
-	manpower = 323100
+	id = 1192
+	name = "STATE_1192"
+	manpower = 511100
 	
 	state_category = town
 	
 	resources = {
-		rubber = 25
+		tungsten = 60 
+		rubber = 115 
+		aluminium = 3
+		steel = 6
 	}
 
 	history = {
@@ -15,11 +18,7 @@ state = {
 		add_core_of = JAP
 
 		victory_points = {
-			1291 1 # Alor Setar
-		}
-
-		victory_points = {
-			12144 1 # Kangar 
+			1376 1 # Ipoh 
 		}
 
 		buildings = {
@@ -31,7 +30,7 @@ state = {
 	}
 
 	provinces = {
-		1291 7342 12144 
+		1364 1376 4310 4384 12215 
 	}
 
 	local_supplies = 0.0 
